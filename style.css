@@ -222,7 +222,7 @@ p
 }
 .about
 {
-  background: #000;
+  background: #111;
 }
 .about .content
 {
@@ -357,7 +357,7 @@ p
 
 .contact
 {
-  background: #000;
+  background: #111;
   display: flex;
   justify-content: center;
   align-items: center;
