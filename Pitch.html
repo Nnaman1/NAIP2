@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>NAIP | Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+
+    <section class="work" id="work">
+      <div class="title">
+        <h2>Pitch</h2>
+      </div>
+      <p></p>
+      <div class="content">
+        <p>
+          Thanks for your interest in Nigerian American Investment Partners!
+          We're excited to learn more about your company and what you're
+          building! Please complete this <a href="">investment form</a> if you'd
+          like to request funding and we'll reach out as soon as possible.
+        </p>
+      </div>
+    </section>
+
+    <div class="copyright">
+      <p>Copyright © 2022 NAIP LLC. All rights reserved.</p>
+    </div>
+
+    <div class="sidebar">
+      <ul class="menu">
+        <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#services" onclick="toggleMenu();">Portfolio</a></li>
+        <li><a href="Pitch.html" onclick="toggleMenu();">Pitch</a></li>
+        <li><a href="#work" onclick="toggleMenu();">Investment Team</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        const menuToggle = document.querySelector(".toggle");
+        const sidebar = document.querySelector(".sidebar");
+        menuToggle.classList.toggle("active");
+        sidebar.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
